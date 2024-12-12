@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>I'll Be There - Media Player</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="player-container">
+    <div class="cover-container">
+      <img src="cover.jpg" alt="Copertina I'll Be There" class="cover-image">
+    </div>
+
+    <div class="track-info">
+      <h1>I'll Be There</h1>
+      <p>Bush</p>
+    </div>
+
+    <div class="controls">
+      <audio id="audio-player" controls>
+        <source src="I_ll_Be_There.mp3" type="audio/mpeg">
+        Il tuo browser non supporta l'elemento audio.
+      </audio>
+      <div class="progress-bar">
+        <span class="progress"></span>
+      </div>
+      <div class="buttons">
+        <button id="play-pause" aria-label="Riproduci/Pausa">
+          <i class="fas fa-play"></i>
+        </button>
+        <button id="download-track" aria-label="Scarica">
+          <i class="fas fa-download"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="volume-control">
+      <i class="fas fa-volume-down"></i>
+      <input type="range" id="volume" min="0" max="1" step="0.01" value="1">
+      <i class="fas fa-volume-up"></i>
+    </div>
+  </div>
+
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script> 
+  <script src="script.js"></script>
+</body>
+</html>
